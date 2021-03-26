@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="classroom-springboot-student-restapi-master/src/main/java"/>
+	<classpathentry kind="src" path="classroom-springboot-student-restapi-master/src/test/java"/>
+	<classpathentry kind="src" path="exo/src/main/java"/>
+	<classpathentry kind="src" path="exo/src/test/java"/>
+	<classpathentry kind="lib" path="classroom-springboot-student-restapi-master/target/classroom-springboot-student-restapi-1.0.jar"/>
+	<classpathentry kind="output" path="classroom-springboot-student-restapi-master/target/classes"/>
+</classpath>

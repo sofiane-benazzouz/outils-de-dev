@@ -8,7 +8,7 @@ import utilities.StringUtils;
 import java.util.stream.*;
 
 public class Application {
-	public  List<String> ListNameEtudiant;
+	//public  List<String> ListNameEtudiant;
 	private StudentService serviceEtudiant ;
 	
 
@@ -17,28 +17,22 @@ public class Application {
 	}
 	
 	List<String> findAllStudentNames(){
-		try {
+		 	List<String> ListNameEtudiant = new ArrayList<String>();
 			System.out.println("je suis dedans");
 			List<Student> listEtudiant = this.serviceEtudiant.findAll();
 			for(Student etudiant : listEtudiant) {
 				ListNameEtudiant.add(StringUtils.capitalize(etudiant.getName()));
 			}
-		} catch (NullPointerException e) {
-			return new ArrayList<String>();
-		}
 		return ListNameEtudiant;
 	}
 	
 	List<String> findAllStudentNames(String name){
-		try {
+		List<String> ListNameEtudiant = new ArrayList<String>();
 			List<Student> listEtudiant = this.serviceEtudiant.findAll(name);
 			//listEtudiant.stream().map(s -> s.getName()).collect(Collectors.toList());
 			for(Student etudiant : listEtudiant) {
 				ListNameEtudiant.add(StringUtils.capitalize(etudiant.getName()));
 			}
-		} catch (NullPointerException e) {
-			return new ArrayList<String>();
-		}
 			return ListNameEtudiant;
 		}
 	

@@ -8,7 +8,8 @@ public class StudentServiceVideImp implements StudentService{
 	@Override
 	public List<Student> findAll() {
 		// TODO Auto-generated method stub
-		return new ArrayList<Student>();
+		List<Student> list = new ArrayList<Student>();
+		return list;
 	}
 
 	@Override
